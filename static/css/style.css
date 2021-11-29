@@ -11,8 +11,17 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Nunito Sans', sans-serif;
-    background: #111;
+    --bg: #fafafa;
+    --bgl: #efefef;
+    --bgll: #eaeaea;
+    --fg: #191919;
+    /* --bg: #111;
+    --bgl: #191919;
+    --bgll: #222;
+    --fg: #efefef; */
+    --blue: #68a3c0;
+    --bluel: #68a3c0c9;
+    --bluell: #68a3c069;
 
     --primary-hsl: 200, 41%, 58%;
     --secondary-hsl: 0,0%,100%;
@@ -20,13 +29,18 @@ body{
     --primary: hsla(var(--primary-hsl),1);
     --secondary: hsla(var(--secondary-hsl),1);
     --tertiary: hsla(var(--tertiary-hsl),1);
+
+
+    font-family: 'Nunito Sans', sans-serif;
+    background: var(--bg);
+
 }
 
 h1.title {
     font-family: 'Bebas Neue', cursive;
     font-size: 3rem;
     letter-spacing: 2px;
-    color: #efefef;
+    color: var(--fg);
 }
 
 @media (max-width: 500px) {
