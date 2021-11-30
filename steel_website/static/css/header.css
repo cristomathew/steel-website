@@ -8,7 +8,7 @@ header{
     width: 100%;
     height: 70px;
     padding: 0 2%;
-    background: #111;
+    background: var(--bg);
     backdrop-filter: blur(3px);
 
     display: flex;
@@ -157,7 +157,7 @@ header .menu .items:hover{
 
 @media (max-width: 400px){
     header{
-        background: #111;
+        background: var(--bg);
     }
     header .logo{
         height: 60px;

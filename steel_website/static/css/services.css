@@ -11,7 +11,7 @@
   width: 80%;
   padding: 20px 15px 20px 30px;
   border-radius: 10px;
-  background: #191919;
+  background: var(--bgl);
 
   display: flex;
   align-items: flex-start;
@@ -26,7 +26,7 @@
 }
 
 .services .card:hover {
-  background: #222;
+  background: var(--bgll);
 }
 
 .services .card .image {
@@ -49,7 +49,7 @@
 
 .services .card .content {
   flex: 1;
-  color: #efefef;
+  color: var(--fg);
 
   display: flex;
   flex-direction: column;
@@ -74,7 +74,7 @@
   margin: 50px 0;
   left: 50%;
   transform: translateX(-50%);
-  background: #68a3c059;
+  background: var(--bluell);
 }
 
 @media (max-width: 1000px) {
