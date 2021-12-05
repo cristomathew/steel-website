@@ -61,7 +61,7 @@
 
 @media (max-width: 500px) {
   .about {
-    padding: 80px 30px;
+    padding: 40px 30px;
     flex-direction: column;
     gap: 50px;
   }
