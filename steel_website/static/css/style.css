@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:wght@300;400;600;700&display=swap');
-@import "./css/header.css";
-@import "./css/home.css";
-@import "./css/page2.css";
-@import "./css/section2.css";
-@import "./css/about.css";
-@import "./css/services.css";
-@import "./css/resources.css";
-@import "./css/footer.css";
+@import "./header.css";
+@import "./home.css";
+@import "./page2.css";
+@import "./section2.css";
+@import "./about.css";
+@import "./services.css";
+@import "./resources.css";
+@import "./footer.css";
 
 *{
     margin: 0;
