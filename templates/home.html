@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>Home</title>
-
+    
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
@@ -16,23 +15,32 @@
 
     <!-- Menu and Pictures -->
 
-    <header>
+    <div class="head-contact">
+        <a href="1300465284">Call 1300 465 284</a>
+        <span>|</span>
+        <a href="info@steelrepublic.com.au">info@steelrepublic.com.au</a>
+    </div>
+
+    <div class="navbar">
         <a href="#" class="logo">
-            <img src="{% static 'img/logo.jpeg' %}" alt="">
+            <img src="{% static 'img/official/logo.png' %}" alt="Logo">
         </a>
         <div class="menu-btn">
             <i class="fas fa-bars"></i>
         </div>
         <div class="menu">
-            <a href="{% url 'home' %}"> <div class="items">Home</div> </a>
-            <a href="{% url 'about' %}"> <div class="items">About</div> </a>
-            <a href="{% url 'about' %}"> <div class="items">Services</div> </a>
-            <a href="{% url 'about' %}"> <div class="items">Resources</div> </a>
-            <a href="{% url 'about' %}"> <div class="items">Connect</div> </a>
-        </div>
-    </header>
+            <a href="./index.html" target="__blank"> <div class="items">Home</div> </a>
+            <a href="./page2.html" target="__blank"> <div class="items">About</div> </a>
+            <a href="./page2.html" target="__blank"> <div class="items">Services</div> </a>
+            <a href="./page2.html" target="__blank"> <div class="items">Resources</div> </a>
+            <a href="./page2.html" target="__blank"> <div class="items">Connect</div> </a>
+          </div>
+    </div>
 
-    <img class="img--main" src="{% static 'img/home2.jpg' %}" alt="">
+    <div class="section-1">
+        <img class="home-img" src="{% static 'img/official/roof.png' %}" alt="Home Image">
+    </div>
+
 
     <!-- Home -->
 
@@ -254,7 +262,84 @@
             </div>
         </div>
     </div>
-    
-    <script src="{% static '/js/index.js' %}"></script>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container">
+          <div class="design">
+            <div class="title">Our Services</div>
+            <div class="expand-btn">
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="items">Cold – formed steel frames</div>
+            <div class="items">Buckling – restrained Braced frame (BRBF)</div>
+            <div class="items">Curtain Wall (architecture)</div>
+            <div class="items">Structural Steel</div>
+            <div class="items">Space Truss structure</div>
+            <div class="items">Light Gauge Steel</div>
+            <div class="items">Framing Systems</div>
+            <div class="items">Metal Roof Truss</div>
+          </div>
+          <div class="design">
+            <div class="title">Resources</div>
+            <div class="expand-btn">
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="items">Brochures</div>
+            <div class="items">Building & Trade</div>
+            <div class="items">Technical</div>
+            <div class="items">Videos</div>
+          </div>
+          <div class="design">
+            <div class="title">Build with us</div>
+            <div class="expand-btn">
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="items">Our Process</div>
+            <div class="items">Where we build</div>
+          </div>
+          <div class="design contact">
+            <div class="title">Connect</div>
+            <div class="expand-btn">
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="items main">Phone</div>
+            <div class="items">1300 465 284</div>
+            <div class="items main">Office</div>
+            <div class="items">10 Sovereign Place,
+      South Windsor, 2756</div>
+            <div class="items main">Email</div>
+            <div class="items">info@steelrepublic.com.au</div>
+          </div>
+          <div class="social">
+            <a href="#" target="_blank" class="social-btn">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#"  target="_blank" class="social-btn">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#"  target="_blank" class="social-btn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#"  target="_blank" class="social-btn">
+              <i class="fab fa-pinterest-p"></i>
+            </a>
+          </div>
+        </div>
+        <div class="credits">
+            <a href="#" class="logo">
+                <img src="{% static 'img/official/logo.png' %}" alt="Logo">
+            </a>
+          <div class="claim">&copy; Copyright 2022 Steel Republic</div>
+          <div class="docs">
+            <a href="#">Privacy Policy </a>
+            <span> | </span>
+            <a href="#"> Terms & Conditions</a>
+          </div>
+        </div>
+      </footer>
+
+    <script src="{% static 'js/index.js' %}"></script>
 </body>
 </html>
