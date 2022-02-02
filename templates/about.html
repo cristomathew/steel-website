@@ -18,7 +18,7 @@
     <div class="head-contact">
         <a href="1300465284">Call 1300 465 284</a>
         <span>|</span>
-        <a href="quotes@steelrepublic.com.au">quotes@steelrepublic.com.au</a>
+        <a href="info@steelrepublic.com.au">info@steelrepublic.com.au</a>
     </div>
 
     <div class="navbar">
@@ -31,9 +31,9 @@
         <div class="menu">
           <a href="{% url 'home' %}"> <div class="items">Home</div> </a>
           <a href="{% url 'about' %}"> <div class="items">About</div> </a>
-          <a href="{% url 'about' %}"> <div class="items">Services</div> </a>
+          <a href="{% url 'services' %}"> <div class="items">Services</div> </a>
           <a href="{% url 'about' %}"> <div class="items">Resources</div> </a>
-          <a href="{% url 'about' %}"> <div class="items">Connect</div> </a>
+          <a href="{% url 'connect' %}"> <div class="spcl-items">Connect</div> </a>
         </div>
     </div>
 
@@ -73,161 +73,74 @@
     <!-- Services and Solutions -->
 
     <div class="services">
-        <div class="card">
-            <div class="image">
-                <img src="{% static 'img/services/1.png' %}" alt="">
-            </div>
-            <div class="content">
-                <h1>Cold – formed steel frames</h1>
-                <p>Cold-formed steel frames are also known as lightweight steel framing (LSF).  
-                    The Thin sheets of galvanized steel can be cold formed into steel studs for use as a 
-                    structural or non-structural building material for both external and partition walls in both 
-                    residential, commercial and industrial construction projects.</p>
-            </div>
-        </div>
-        <div class="underline"></div>
+      <h1 class="title">Services & Solutions</h1>
 
-        <div class="card">
-            <div class="image">
-                <img src="{% static 'img/services/2.png' %}" alt="">
-            </div>
-            <div class="content">
-                <h1>Buckling – restrained Braced frame (BRBF)</h1>
-                <p>A buckling-restrained brace (BRB) consists 
-                    of a steel core surrounded by a hollow steel 
-                    section, coated with a low-friction material, 
-                    and then grouted with a specialized mortar. 
-                    This provides lateral resistance to buckling, 
-                    particularly during seismic activity.</p>
-            </div>
-        </div>
-        <div class="underline"></div>
+      <div class="card">
+          <div class="image">
+              <img src="{% static 'img/services/8.png' %}" alt="">
+          </div>
+          <div class="content">
+              <h1>Metal Roof Truss</h1>
+              <p>By creating a roof’s frame, metal roof truss determines  the shape of the roof and ceiling, 
+                  while providing support for the roof. Trusses are pre-engineered in a factory using 
+                  lightweight materials, like 2x4s, and are shipped to the construction site. Trusses consist 
+                  of three main parts:
+              </p>
+              <ul>
+                  <li>Top chords</li>
+                  <li>Bottom chords (also known as I-joists, or ceiling joists)</li>
+                  <li>Webbing/posts</li>
+              </ul>
+              <p>
+                  Trusses are used as an alternative to rafters, or stick framing. Rafters are usually made 
+                  from larger pieces of lumber, such as 2x8s or 2x10s, and require the skill of an expert 
+                  carpenter to custom-build and install them directly on the job site. This makes rafters 
+                  more expensive than trusses.
+              </p>
+          </div>
+      </div>
+      <div class="underline"></div>
 
-        <div class="card">
-            <div class="image">
-                <img src="{% static 'img/services/3.png' %}" alt="">
-            </div>
-            <div class="content">
-                <h1>Curtain Wall (architecture)</h1>
-                <p>A curtain wall is an outer covering of a 
-                    building in which the outer walls are 
-                    non-structural, utilized only to keep the 
-                    weather out and the occupants in. The 
-                    development and widespread use of 
-                    structural steel and later reinforced concrete 
-                    allowed relatively small columns to support 
-                    large loads.</p>
-            </div>
-        </div>
-        <div class="underline"></div>
+      <div class="card">
+          <div class="image">
+              <img src="{% static 'img/official/2.jpg' %}" alt="">
+          </div>
+          <div class="content">
+              <h1>Wall Frames</h1>
+              <p>Wall frames are structural or non-structural building material for both external and partition walls in both residential, commercial and industrial construction projects. Which also includes curtain wall a form of frame for outer covering of a building in which the outer walls are non-structural, utilized only to keep the weather out and the occupants in. The development and widespread use of structural steel and later reinforced concrete allowed relatively small columns to support large loads. </p>
+          </div>
+      </div>
+      <div class="underline"></div>
 
-        <div class="card">
-            <div class="image">
-                <img src="{% static 'img/services/4.png' %}" alt="">
-            </div>
-            <div class="content">
-                <h1>Structural Steel</h1>
-                <p>They are used for making construction 
-                    materials in a variety of shapes. Many 
-                    structural steel shapes take the form of an 
-                    elongated beam having a profile of a specific 
-                    cross section. Structural steel shapes, sizes, 
-                    chemical composition, mechanical properties 
-                    such as strengths, storage practices, etc.</p>
-            </div>
-        </div>
-        <div class="underline"></div>
+      <div class="card">
+          <div class="image">
+              <img src="{% static 'img/services/6.png' %}" alt="">
+          </div>
+          <div class="content">
+              <h1>Floor Joist</h1>
+              <p>Floor joists are horizontal structural members that span an open space, often between beams, which subsequently transfer the load to vertical structural members. These joists, part of the floor system, carry the weight of everything inside a room, including walls, furniture, appliances, and even people. Floor joists help distribute the load of a structure. </p>
+          </div>
+      </div>
+      <div class="underline"></div>
 
-        <div class="card">
-            <div class="image">
-                <img src="{% static 'img/services/5.png' %}" alt="">
-            </div>
-            <div class="content">
-                <h1>Space Truss structure</h1>
-                <p>Space frame/ Space structure allows odd 
-                    placement of columns, along with integral 
-                    cladding and glazing. It is capable of bearing 
-                    heavy loadings with minimum deflections. The 
-                    cost of transportation is less as compared to 
-                    conventional steel structures.</p>
-            </div>
-        </div>
-        <div class="underline"></div>
-
-        <div class="card">
-            <div class="image">
-                <img src="{% static 'img/services/6.png' %}" alt="">
-            </div>
-            <div class="content">
-                <h1>Light Gauge Steel</h1>
-                <p>Light Gauge Framing System (LGFS) or Light 
-                    gauge Steel framing (LGSF) is a construction 
-                    technology using cold-formed steel as the 
-                    construction material. It can be used for roof 
-                    systems, floor systems, wall systems, roof 
-                    panels, decks, or the entire buildings.</p>
-            </div>
-        </div>
-        <div class="underline"></div>
-        
-        <div class="card">
-            <div class="image">
-                <img src="{% static 'img/services/7.png' %}" alt="">
-            </div>
-            <div class="content">
-                <h1>Framing Systems</h1>
-                <p>Framing, in construction, is the fitting together of pieces to give a structure support 
-                    and shape.
-                    Building framing is divided into two broad categories, 
-                    heavy-frame construction (heavy framing) if the vertical supports and light-frame 
-                    construction (light-framing) if the supports are more numerous and smaller, 
-                    such as balloon, platform, or light-steel framing.</p>
-            </div>
-        </div>
-        <div class="underline"></div>
-        
-        <div class="card">
-            <div class="image">
-                <img src="{% static 'img/services/8.png' %}" alt="">
-            </div>
-            <div class="content">
-                <h1>Metal Roof Truss</h1>
-                <p>By creating a roof’s frame, metal roof truss determines  the shape of the roof and ceiling, 
-                    while providing support for the roof. Trusses are pre-engineered in a factory using 
-                    lightweight materials, like 2x4s, and are shipped to the construction site. Trusses consist 
-                    of three main parts:
-                </p>
-                <ul>
-                    <li>Top chords</li>
-                    <li>Bottom chords (also known as I-joists, or ceiling joists)</li>
-                    <li>Webbing/posts</li>
-                </ul>
-                <p>
-                    Trusses are used as an alternative to rafters, or stick framing. Rafters are usually made 
-                    from larger pieces of lumber, such as 2x8s or 2x10s, and require the skill of an expert 
-                    carpenter to custom-build and install them directly on the job site. This makes rafters 
-                    more expensive than trusses.
-                </p>
-            </div>
-        </div>
-        <div class="underline"></div>
-        
-        <div class="card">
-            <div class="image">
-                <img src="{% static 'img/services/9.png' %}" alt="">
-            </div>
-            <div class="content">
-                <h1>Framing Systems</h1>
-                <p>Framing, in construction, is the fitting together of pieces to give a structure support 
-                    and shape.
-                    Building framing is divided into two broad categories, 
-                    heavy-frame construction (heavy framing) if the vertical supports and light-frame 
-                    construction (light-framing) if the supports are more numerous and smaller, 
-                    such as balloon, platform, or light-steel framing.</p>
-            </div>
-        </div>
-        <div class="underline"></div>
-    </div>
+      <div class="card">
+          <div class="image">
+              <img src="{% static 'img/services/2.png' %}" alt="">
+          </div>
+          <div class="content">
+              <h1>Buckling – restrained Braced frame (BRBF)</h1>
+              <p>A buckling-restrained brace (BRB) consists 
+                  of a steel core surrounded by a hollow steel 
+                  section, coated with a low-friction material, 
+                  and then grouted with a specialized mortar. 
+                  This provides lateral resistance to buckling, 
+                  particularly during seismic activity.</p>
+          </div>
+      </div>
+      <a href="{% url 'services' %}">
+          <div class="btn">View More</div>
+      </a>
+  </div>
 
     <!-- Resources -->
 
@@ -252,61 +165,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Contact -->
-
-    <div class="section-2">
-        <div class="left-container">
-          <h1 class="title">We are Happy to help you !</h1>
-          <div class="form-container">
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Email Address" />
-            <input type="text" placeholder="Phone" />
-            <input type="text" placeholder="State" />
-            <input type="text" placeholder="Current Suburb" />
-            <input type="text" placeholder="Post Code" />
-            <input type="text" placeholder="Building Location" />
-            <input type="text" placeholder="How did you hear about us ?" />
-            <textarea placeholder="Message"></textarea>
-            <input type="submit" value="Submit" />
-          </div>
-        </div>
-        <div class="right-container">
-          <div class="image"></div>
-  
-          <div class="contact">
-            <h1 class="title">Contact</h1>
-            <div class="detail">
-              <div class="main">Phone</div>
-              <div class="sub">1300 500 400</div>
-            </div>
-            <div class="detail">
-              <div class="main">Fax</div>
-              <div class="sub">(02) 4000 6000</div>
-            </div>
-            <div class="detail">
-              <div class="main">Head Office</div>
-              <div class="sub">10 Sovereign Place, South Windsor, 2756</div>
-            </div>
-          </div>
-  
-          <div class="hours">
-            <h1 class="title">Hours</h1>
-            <div class="detail">
-              <div class="main">Office Opening Hours</div>
-              <div class="sub">Monday - Friday : 8.30AM - 5PM</div>
-            </div>
-            <div class="detail">
-              <div class="main">Display Home Hours</div>
-              <div class="sub">Monday - Sunday : 10AM - 5PM</div>
-              <div class="sub">Or by appointment</div>
-            </div>
-          </div>
-        </div>
-        <div class="map">
-          <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5532.0049135669615!2d151.21200001450015!3d-33.85910491823105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae665e892fdd%3A0x3133f8d75a1ac251!2sSydney%20Opera%20House!5e0!3m2!1sen!2sin!4v1633150117036!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-        </div>
-      </div>
 
     <!-- Footer -->
 
@@ -355,7 +213,7 @@
             <div class="items">10 Sovereign Place,
       South Windsor, 2756</div>
             <div class="items main">Email</div>
-            <div class="items">quotes@steelrepublic.com.au</div>
+            <div class="items">info@steelrepublic.com.au</div>
           </div>
           <div class="social">
             <a href="#" target="_blank" class="social-btn">
