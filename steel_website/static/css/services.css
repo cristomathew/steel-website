@@ -121,6 +121,9 @@
     gap: 15px;
   }
   .services .card .image {
+    width: 300px;
+  height: 300px;
+  border-radius: 5px;
     align-self: center;
   }
   .services .card .content h1 {

@@ -39,3 +39,25 @@ for(let i=0; i<designCard.length; i++){
     toggle=!toggle;
   });
 }
+
+// swiper
+
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  speed: 2000,
+  spaceBetween: 0,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -37,9 +39,52 @@
         </div>
     </div>
 
-    <div class="section-1">
-        <img class="home-img" src="{% static './img/man_welding.jpg' %}" alt="Home Image">
-    </div>
+    <!-- slider images -->
+
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+            <div class="swiper-slide">
+                <img src="{% static 'img/man_welding.jpg' %}" alt="Home Image">
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'img/steel/1.jpg' %}" alt="Home Image">
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'img/steel/2.jpg' %}" alt="Home Image">
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'img/steel/3.jpg' %}" alt="Home Image">
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'img/steel/4.jpg' %}" alt="Home Image">
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'img/steel/5.jpg' %}" alt="Home Image">
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'img/steel/6.jpg' %}" alt="Home Image">
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'img/steel/7.jpg' %}" alt="Home Image">
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'img/steel/8.jpg' %}" alt="Home Image">
+            </div>
+            <div class="swiper-slide">
+                <img src="{% static 'img/working.jpg' %}" alt="Home Image">
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+      </div>
+
 
 
     <!-- Home -->
@@ -247,6 +292,7 @@
         </div>
       </footer>
 
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="{% static 'js/index.js' %}"></script>
 </body>
 </html>
